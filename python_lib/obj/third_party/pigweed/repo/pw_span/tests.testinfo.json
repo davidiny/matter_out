@@ -1,0 +1,16 @@
+[
+  {
+    "test_directory": "obj/third_party/pigweed/repo/pw_span/test",
+    "test_name": "pw_span_test",
+    "type": "test"
+  },
+  {
+    "test_directory": "obj/third_party/pigweed/repo/pw_span/test",
+    "test_name": "compatibility_test",
+    "type": "test"
+  },
+  {
+    "name": "//third_party/pigweed/repo/pw_span:tests",
+    "type": "self"
+  }
+]

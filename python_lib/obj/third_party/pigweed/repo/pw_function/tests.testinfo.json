@@ -1,0 +1,16 @@
+[
+  {
+    "test_directory": "obj/third_party/pigweed/repo/pw_function/test",
+    "test_name": "function_test",
+    "type": "test"
+  },
+  {
+    "test_directory": "obj/third_party/pigweed/repo/third_party/fuchsia/test",
+    "test_name": "function_tests",
+    "type": "test"
+  },
+  {
+    "name": "//third_party/pigweed/repo/pw_function:tests",
+    "type": "self"
+  }
+]

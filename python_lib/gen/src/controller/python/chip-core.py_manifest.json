@@ -1,0 +1,104 @@
+{
+  "files": [
+    {
+      "sources": [
+        "chip/CertificateAuthority.py",
+        "chip/ChipBleBase.py",
+        "chip/ChipBleUtility.py",
+        "chip/ChipBluezMgr.py",
+        "chip/ChipCommissionableNodeCtrl.py",
+        "chip/ChipCoreBluetoothMgr.py",
+        "chip/ChipStack.py",
+        "chip/FabricAdmin.py",
+        "chip/__init__.py",
+        "chip/ble/__init__.py",
+        "chip/ble/commissioning/__init__.py",
+        "chip/ble/get_adapters.py",
+        "chip/ble/library_handle.py",
+        "chip/ble/scan_devices.py",
+        "chip/ble/types.py",
+        "chip/clusters/Attribute.py",
+        "chip/clusters/Command.py",
+        "chip/clusters/__init__.py",
+        "chip/configuration/__init__.py",
+        "chip/discovery/__init__.py",
+        "chip/discovery/library_handle.py",
+        "chip/discovery/types.py",
+        "chip/exceptions/__init__.py",
+        "chip/interaction_model/__init__.py",
+        "chip/interaction_model/delegate.py",
+        "chip/internal/__init__.py",
+        "chip/internal/commissioner.py",
+        "chip/internal/thread.py",
+        "chip/internal/types.py",
+        "chip/logging/__init__.py",
+        "chip/logging/library_handle.py",
+        "chip/logging/types.py",
+        "chip/native/__init__.py",
+        "chip/setup_payload/__init__.py",
+        "chip/setup_payload/setup_payload.py",
+        "chip/storage/__init__.py",
+        "chip/utils/CommissioningBuildingBlocks.py",
+        "chip/utils/__init__.py",
+        "chip/yaml/__init__.py",
+        "chip/yaml/constraints.py",
+        "chip/yaml/data_model_lookup.py",
+        "chip/yaml/errors.py",
+        "chip/yaml/format_converter.py",
+        "chip/yaml/parser.py",
+        "chip/yaml/variable_storage.py",
+        "chip-device-ctrl.py",
+        "chip-repl.py",
+        "chip/ChipDeviceCtrl.py"
+      ],
+      "src_dir": "../../../../../../src/controller/python"
+    },
+    {
+      "sources": [
+        "chip/_ChipDeviceCtrl.so"
+      ],
+      "src_dir": "../../../../obj/src/controller/python"
+    },
+    {
+      "sources": [
+        "LICENSE"
+      ],
+      "src_dir": "../../../../../../"
+    }
+  ],
+  "package_reqs": [
+    "coloredlogs",
+    "construct",
+    "dacite",
+    "rich",
+    "pyyaml",
+    "ipdb",
+    "deprecation",
+    "mobly",
+    "cryptography",
+    "pycrypto",
+    "ecdsa",
+    "pygobject"
+  ],
+  "packages": [
+    "chip",
+    "chip.ble",
+    "chip.ble.commissioning",
+    "chip.configuration",
+    "chip.clusters",
+    "chip.utils",
+    "chip.discovery",
+    "chip.exceptions",
+    "chip.internal",
+    "chip.interaction_model",
+    "chip.logging",
+    "chip.yaml",
+    "chip.native",
+    "chip.clusters",
+    "chip.setup_payload",
+    "chip.storage"
+  ],
+  "scripts": [
+
+  ]
+}

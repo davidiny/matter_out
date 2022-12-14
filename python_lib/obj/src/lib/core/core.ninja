@@ -1,0 +1,40 @@
+defines = -DCHIP_HAVE_CONFIG_H=1
+framework_dirs =
+include_dirs = -I../../src/include -I../../src -Igen/include -I../../zzz_generated/app-common -I../../config/python -I../../third_party/nlassert/repo/include -I../../third_party/nlio/repo/include -I../../third_party/nlfaultinjection/repo/include
+cflags = -Wconversion -O0 -g2 -fno-common -ffunction-sections -fdata-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -fPIC -Wall -Werror -Wextra -Wshadow -Wunreachable-code -Wvla -Wformat -Wformat-nonliteral -Wformat-security -Wno-deprecated-declarations -Wno-missing-field-initializers -Wno-unknown-warning-option -Wno-unused-parameter -Wno-cast-function-type -Wno-psabi -Wno-maybe-uninitialized -fdiagnostics-color -fno-strict-aliasing
+cflags_cc = -std=gnu++14 -fno-rtti -Wnon-virtual-dtor
+target_output_name = libChipCore
+
+build obj/src/lib/core/core.inputdeps.stamp: stamp obj/src/ble/gen_ble_buildconfig.stamp obj/src/inet/gen_inet_buildconfig.stamp obj/src/lib/core/gen_chip_buildconfig.stamp obj/src/lib/support/gen_chip_version.stamp obj/src/platform/gen_platform_buildconfig.stamp obj/src/system/gen_system_buildconfig.stamp
+build obj/src/lib/core/libChipCore.CHIPCircularTLVBuffer.cpp.o: cxx ../../src/lib/core/CHIPCircularTLVBuffer.cpp || obj/src/lib/core/core.inputdeps.stamp
+  source_file_part = CHIPCircularTLVBuffer.cpp
+  source_name_part = CHIPCircularTLVBuffer
+build obj/src/lib/core/libChipCore.CHIPError.cpp.o: cxx ../../src/lib/core/CHIPError.cpp || obj/src/lib/core/core.inputdeps.stamp
+  source_file_part = CHIPError.cpp
+  source_name_part = CHIPError
+build obj/src/lib/core/libChipCore.CHIPKeyIds.cpp.o: cxx ../../src/lib/core/CHIPKeyIds.cpp || obj/src/lib/core/core.inputdeps.stamp
+  source_file_part = CHIPKeyIds.cpp
+  source_name_part = CHIPKeyIds
+build obj/src/lib/core/libChipCore.CHIPTLVDebug.cpp.o: cxx ../../src/lib/core/CHIPTLVDebug.cpp || obj/src/lib/core/core.inputdeps.stamp
+  source_file_part = CHIPTLVDebug.cpp
+  source_name_part = CHIPTLVDebug
+build obj/src/lib/core/libChipCore.CHIPTLVReader.cpp.o: cxx ../../src/lib/core/CHIPTLVReader.cpp || obj/src/lib/core/core.inputdeps.stamp
+  source_file_part = CHIPTLVReader.cpp
+  source_name_part = CHIPTLVReader
+build obj/src/lib/core/libChipCore.CHIPTLVUpdater.cpp.o: cxx ../../src/lib/core/CHIPTLVUpdater.cpp || obj/src/lib/core/core.inputdeps.stamp
+  source_file_part = CHIPTLVUpdater.cpp
+  source_name_part = CHIPTLVUpdater
+build obj/src/lib/core/libChipCore.CHIPTLVUtilities.cpp.o: cxx ../../src/lib/core/CHIPTLVUtilities.cpp || obj/src/lib/core/core.inputdeps.stamp
+  source_file_part = CHIPTLVUtilities.cpp
+  source_name_part = CHIPTLVUtilities
+build obj/src/lib/core/libChipCore.CHIPTLVWriter.cpp.o: cxx ../../src/lib/core/CHIPTLVWriter.cpp || obj/src/lib/core/core.inputdeps.stamp
+  source_file_part = CHIPTLVWriter.cpp
+  source_name_part = CHIPTLVWriter
+build obj/src/lib/core/libChipCore.OTAImageHeader.cpp.o: cxx ../../src/lib/core/OTAImageHeader.cpp || obj/src/lib/core/core.inputdeps.stamp
+  source_file_part = OTAImageHeader.cpp
+  source_name_part = OTAImageHeader
+
+build obj/src/lib/core/lib/libChipCore.a: alink obj/src/lib/core/libChipCore.CHIPCircularTLVBuffer.cpp.o obj/src/lib/core/libChipCore.CHIPError.cpp.o obj/src/lib/core/libChipCore.CHIPKeyIds.cpp.o obj/src/lib/core/libChipCore.CHIPTLVDebug.cpp.o obj/src/lib/core/libChipCore.CHIPTLVReader.cpp.o obj/src/lib/core/libChipCore.CHIPTLVUpdater.cpp.o obj/src/lib/core/libChipCore.CHIPTLVUtilities.cpp.o obj/src/lib/core/libChipCore.CHIPTLVWriter.cpp.o obj/src/lib/core/libChipCore.OTAImageHeader.cpp.o || obj/src/lib/core/chip_config_header.stamp obj/src/ble/lib/libBleLayer.a obj/src/inet/lib/libInetLayer.a obj/src/lib/support/lib/libSupportLayer.a obj/src/system/lib/libSystemLayer.a obj/third_party/nlio/nlio.stamp obj/src/lib/core/chip_buildconfig.stamp obj/src/ble/ble_config_header.stamp obj/src/ble/ble_buildconfig.stamp obj/src/platform/platform_buildconfig.stamp obj/src/system/system_config_header.stamp obj/src/system/system_buildconfig.stamp obj/src/inet/inet_config_header.stamp obj/src/inet/inet_buildconfig.stamp obj/src/lib/support/attributes.stamp obj/src/lib/support/chip_version_header.stamp obj/src/lib/support/logging_constants.stamp obj/src/platform/logging/headers.stamp obj/third_party/nlassert/nlassert.stamp lib/libnlfaultinjection.a
+  arflags =
+  output_extension = .a
+  output_dir = obj/src/lib/core/lib

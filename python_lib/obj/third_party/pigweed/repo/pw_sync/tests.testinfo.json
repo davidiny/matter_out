@@ -1,0 +1,16 @@
+[
+  {
+    "test_directory": "obj/third_party/pigweed/repo/pw_sync/test",
+    "test_name": "borrow_test",
+    "type": "test"
+  },
+  {
+    "test_directory": "obj/third_party/pigweed/repo/pw_sync/test",
+    "test_name": "inline_borrowable_test",
+    "type": "test"
+  },
+  {
+    "name": "//third_party/pigweed/repo/pw_sync:tests",
+    "type": "self"
+  }
+]

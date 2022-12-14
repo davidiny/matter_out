@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "sources": [
+        "chip/ChipReplStartup.py",
+        "chip-device-ctrl.py",
+        "chip-repl.py"
+      ],
+      "src_dir": "../../../../../../src/controller/python"
+    },
+    {
+      "sources": [
+        "LICENSE"
+      ],
+      "src_dir": "../../../../../../"
+    }
+  ],
+  "package_reqs": [
+    "coloredlogs",
+    "ipython!=8.1.0",
+    "rich",
+    "ipykernel",
+    "mobly"
+  ],
+  "packages": [
+    "chip"
+  ],
+  "scripts": [
+    "chip-device-ctrl.py",
+    "chip-repl.py"
+  ]
+}
